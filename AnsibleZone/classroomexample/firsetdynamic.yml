@@ -8,5 +8,5 @@
       dest: /home/ansible/firsttem
   - name : second templete task 
     templete:
-      src:  firsttemplete.j2
+      src:  second.j2
       dest: /home/ansible/secondtem   

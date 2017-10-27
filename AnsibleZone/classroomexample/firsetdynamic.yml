@@ -6,3 +6,7 @@
     template: 
       src: firsttemplete.j2
       dest: /home/ansible/firsttem
+  - name : second templete task 
+    templete:
+      src:  firsttemplete.j2
+      dest: /home/ansible/secondtem   

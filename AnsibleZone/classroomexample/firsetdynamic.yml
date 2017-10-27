@@ -1,8 +1,8 @@
 ---
-- hosts:  all
+- hosts:  ubuntu
   become: yes
   tasks:
-  - name : first templete task 
+  - name : first templete task username is {{ username }}
     template: 
       src: firsttemplete.j2
       dest: /home/ansible/firsttem

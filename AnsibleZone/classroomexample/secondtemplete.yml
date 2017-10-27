@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks :
+  - name : sample templete with no dynamic content 
+    template:
+      src: firsttemplete.j2
+      dest: /home/ansible/samplecopy

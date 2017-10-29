@@ -19,7 +19,7 @@
     verbosity: 4 
   - name: display gateway
     debug:
-    msg: "System {{ inventory_hostname }} has gateway {{ ansible_virtualization_type }}"
+    msg: "{{ ansible_virtualization_type }}"
    
 
 

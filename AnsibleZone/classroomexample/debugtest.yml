@@ -6,8 +6,8 @@
     register: cmd_content
   - name: print variable contents
     debug:
-      msg: "{{ cmd_content }}"  
-      
+      msg: "{{ cmd_content,stdout }}"  
+
     
     
     

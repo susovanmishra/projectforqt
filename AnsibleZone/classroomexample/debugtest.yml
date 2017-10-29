@@ -4,9 +4,16 @@
   - name: execute any basic linux command
     command: hostname -f
     register: cmd_content
-  - name: print variable contents
+  - name: print command Result
     debug:
       msg: "{{ cmd_content,stdout }}"  
+    when: cmd_content.stderr == ""
+  - name: print command error if present 
+    debug:
+      msg: "{{ cmd_content.stderr }}" 
+  - debug:
+    msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"    
+
 
     
     

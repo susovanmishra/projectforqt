@@ -1,0 +1,11 @@
+localhost
+
+[webserver]
+ip-172-31-45-31.us-west-2.compute.internal
+
+[dbserver]
+ip-172-31-30-33.us-west-2.compute.internal
+
+[ubuntu]
+ip-172-31-25-252.us-west-2.compute.internal
+ip-172-31-45-31.us-west-2.compute.internal
